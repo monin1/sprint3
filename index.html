@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GYM Instructions</title>
+
+    <link rel="stylesheet" href="jQueryMobile/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="jQueryMobile/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+    <audio src="audio/click.mp3" id="clicksound"></audio>
+
+
+    <!--main-->
+    <section data-role="page" id="main">
+        <div data-role="header">
+            <h1>GYM Instructions</h1>
+        </div>
+        <div class="panel-pic">
+            <img style="width: 70%" src="image/1.jpg">
+        </div>
+        <div class="body" data-role="listview">
+            <ul class="main-button">
+                <li><a href="#instruction" onclick="playSound()">Start</a></li>
+                <li><a href="#setting" onclick="playSound()">Settings</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!--settings-->
+    <section data-role="page" id="setting">
+        <div data-role="header">
+            <a href="#main" onclick="playSound()" data-icon="home">Home</a>
+            <h1>Setting</h1>
+        </div>
+        <div data-role="content" class="body">
+            <label for="sound">Volume</label>
+            <input type="range" name="slider1" onchange="setVolume()" id="sound" value="2" min="0" max="10" data-theme="a" />
+            <label for="sound">Sound:</label>
+            <form>
+                <fieldset data-role="controlgroup">
+                    <label for="on">On</label>
+                    <input type="radio" name="radio-1" onclick="setClickOn(), playSound()" id="on" value="on" checked="checked" />
+                    <label for="off">Off</label>
+                    <input type="radio" name="radio-1" onclick="setClickOff()" id="off" value="off" />
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <!--instruction-->
+    <section data-role="page" id="instruction">
+        <div data-role="header">
+            <a href="#main" onclick="playSound()" data-icon="home">Home</a>
+            <h1>Instructions</h1>
+        </div>
+        <div data-role="content" class="body">
+        <p>Get started today with gym and bodyweight workouts with personalised nutrition to build muscle and burn fat. </p>
+
+            <div class="button-group">
+                <div class="button-group-wrapper">
+                    <a href="#Dumbbell" onclick="playSound()" class="ui-btn ui-icon-carat-r ui-btn-icon-top">Let's go</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Dumbbell-->
+    <section data-role="page" id="Dumbbell">
+        <div data-role="header">
+            <a href="#main" onclick="playSound()" data-icon="home">Home</a>
+            <h1>Dumbbell</h1>
+
+
+        </div>
+        <div data-role="content" class="body">
+            <div class="body_part">
+              <div class="part">
+
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/2.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/3.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+              <div class="para">
+
+
+
+
+              <p><strong>Preparation:</strong>Lie down on a flat bench with a dumbbell in each hand resting on top of your thighs, with your palms facing each other. Use your thighs to lift up the dumbbells one at a time so they are over your chest, shoulder width apart.</p>
+              <p> <strong>Execution:</strong> Breathe out and push the dumbbells up using your chest.</p>
+              </div>
+              </div>
+
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/4.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/5.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Lie down on a decline bench with a dumbbell securely grasped between both of your hands, palms facing each other. With your feet firmly planted on the floor or bench supports, raise the dumbbell up over your chest with your arms extended.</p>
+              <p> <strong>Execution:</strong> Keep your arms straight and lower the weight behind your head in an arc movement, as you breathe in. Extend until you feel a stretch in your chest, exhale as you return the weight to start position and repeat.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/6.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/7.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Sit down on a bench holding dumbbells in either hand in a neutral grip at about neck height. </p>
+              <p> <strong>Execution:</strong> Exhale and press the dumbbells up. As your press up, rotate the grips in your hands so that when they reach the top, your hands are in an overhand grip with your palms facing forward. Return, twisting back to neutral, and repeat.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/8.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/9.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Standing in a shoulder-width stance, grab a pair of dumbbells with palms facing inward and let them hang at your sides.</p>
+              <p> <strong>Execution:</strong> Raise your arms out to the sides until they're at shoulder level. Pause, then lower the weights back to the starting position. Repeat.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/10 (2).jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/10 (1).jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Sit down at the preacher bench and place your upper arms against the arm pad, and grab a dumbbell in one hand.</p>
+              <p> <strong>Execution:</strong> Raise the dumbbell until your forearm is almost straight and then lower it back down after a short pause. Repeat and switch arms when you finish your set.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/11 (1).jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/11 (2).jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Sit on one side of a bench, hold one dumbbell in one hand with your palm facing up and place that same elbow (extended) against the front of your thigh. </p>
+              <p> <strong>Execution:</strong>Raise the dumbbell until it reaches shoulder height and slowly lower it back down. Repeat and switch arms after you complete a set.</p>
+              </div>
+
+              </div>
+
+            </div>
+
+            <div class="button-group">
+                <div class="button-group-wrapper">
+                    <a href="#Long_Bar" onclick="playSound()" class="ui-btn ui-icon-carat-r ui-btn-icon-top">Next</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Long_Bar-->
+    <section data-role="page" id="Long_Bar">
+        <div data-role="header">
+            <a href="#main" onclick="playSound()" data-icon="home">Home</a>
+            <h1>Long Bar</h1>
+          </div>
+        <div data-role="content" class="body">
+          <div class="body_part">
+            <div class="part">
+
+
+            <h2>Description</h2>
+
+            <div class="row">
+              <div class="column">
+                <img src="image/12 (1).jpg" style="width:90px;height:90px;">
+              </div>
+              <div class="column">
+                <img src="image/12 (2).jpg" style="width:90px;height:90px;">
+              </div>
+
+            </div>
+
+            <div class="para">
+
+
+
+            <p><strong>Preparation:</strong>Lie back on a flat bench. Hold the bar with a normal width grip and hold the bar straight over you.</p>
+            <p> <strong>Execution:</strong> Breathe in and slowly bring the bar down until it touches your chest. Exhale as you push the bar back to your starting position.</p>
+            </div>
+            </div>
+
+            <div class="part">
+
+
+            <h2>Description</h2>
+
+            <div class="row">
+              <div class="column">
+                <img src="image/13.jpg" style="width:90px;height:90px;">
+              </div>
+              <div class="column">
+                <img src="image/14.jpg" style="width:90px;height:90px;">
+              </div>
+
+            </div>
+
+            <div class="para">
+
+
+
+            <p><strong>Preparation:</strong>Sit down on a shoulder press bench and grab onto the bar </p>
+            <p> <strong>Execution:</strong> Keeping a straight back, exhale and press the bar upward until your arms are extended overhead. Lower to your shoulders behind your head and repeat.</p>
+            </div>
+            </div>
+
+            <div class="part">
+
+
+            <h2>Description</h2>
+
+            <div class="row">
+              <div class="column">
+                <img src="image/40401420_1126538104161274_8494679441509711872_n.jpg" style="width:90px;height:90px;">
+              </div>
+              <div class="column">
+                <img src="image/40294497_532526383846270_2398523863680942080_n.jpg" style="width:90px;height:90px;">
+              </div>
+
+            </div>
+
+            <div class="para">
+
+
+
+            <p><strong>Preparation:</strong>Load your desired weight on a barbell that is on a weight rack, about chest high. Cross your arms and place your hands on top of the barbell while your upper arms are parallel to the floor. </p>
+            <p> <strong>Execution:</strong> Squat down by bending your hips back, letting your knees bend forward, keeping your back straight and knees pointed in the same direction as your feet. Descend until thighs are just past parallel to floor. Extend your knees and hips until your legs are straight. Return and repeat.</p>
+            </div>
+            </div>
+
+            <div class="part">
+
+
+            <h2>Description</h2>
+
+            <div class="row">
+              <div class="column">
+                <img src="image/40351928_340550903154312_1968429875928760320_n.jpg" style="width:90px;height:90px;">
+              </div>
+              <div class="column">
+                <img src="image/40307379_294832084668524_604469372206972928_n.jpg" style="width:90px;height:90px;">
+              </div>
+
+            </div>
+
+            <div class="para">
+
+
+
+            <p><strong>Preparation:</strong>LLoad your desired weight on a barbell that is on a weight rack, about chest high. Position the bar on your shoulders, step away from the rack and stand with your hands supporting the bar and feet shoulder width apart.</p>
+            <p> <strong>Execution:</strong> Squat down by bending your hips back and letting your knees bend forward, keeping your back straight and knees pointed in the same direction as your feet. Descend until thighs are just past parallel to floor. Extend your knees and hips until your legs are straight. Return and repeat. </p>
+            </div>
+            </div>
+
+            <div class="part">
+
+
+            <h2>Description</h2>
+
+            <div class="row">
+              <div class="column">
+                <img src="image/40307379_294832084668524_604469372206972928_n-1.jpg" style="width:90px;height:90px;">
+              </div>
+              <div class="column">
+                <img src="image/40337271_325610148007766_3518095157687746560_n.jpg" style="width:90px;height:90px;">
+              </div>
+
+            </div>
+
+            <div class="para">
+
+
+
+            <p><strong>Preparation:</strong>Load your desired weight on a barbell that is on a weight rack, about chest high. Place the barbell on your shoulders with your hands grabbing and supporting it and stand with your feet shoulder width apart. </p>
+            <p> <strong>Execution:</strong> Step back with your right leg while bending your supporting left leg. Plant the front of your right foot far back on floor. Lower your body by flexing your knee and hip of your left leg until the knee of your right leg is almost in contact with floor. Return and repeat by alternating lunge with opposite leg.</p>
+            </div>
+            </div>
+
+            <div class="part">
+
+
+            <h2>Description</h2>
+
+            <div class="row">
+              <div class="column">
+                <img src="image/40262224_2180702692206440_2370576189363322880_n.jpg" style="width:90px;height:90px;">
+              </div>
+              <div class="column">
+                <img src="image/40374128_846184908839199_6531538259460227072_n.jpg" style="width:90px;height:90px;">
+              </div>
+
+            </div>
+
+            <div class="para">
+
+
+
+            <p><strong>Preparation:</strong>Stand with in front of a loaded barbell and bend your knees and body forward. Grab the bar with an overhand grip with your hands just over shoulder width apart. </p>
+            <p> <strong>Execution:</strong> Exhale as you push up and lift the bar with your legs and at the same time bring your torso to an upright position. Once you are standing, push your chest out and bring your shoulder blades back so you are standing upright at attention. Return while keeping your legs straight and make sure the barbell touches the floor before starting your next rep.</p>
+            </div>
+            </div>
+
+
+          </div>
+            <div class="button-group">
+                <div class="button-group-wrapper">
+                    <a href="#Dumbbell" onclick="playSound()" class="ui-btn ui-icon-carat-l ui-btn-icon-top">Previous</a>
+                </div>
+                <div class="button-group-wrapper">
+                    <a href="#reset-1" data-rel="popup" data-position-to="window" onclick="playSound()" class="ui-btn ui-icon-refresh ui-btn-icon-top">Restart</a>
+                    <div data-role="popup" id="reset-1" class="ui-content">
+                      <h3>restart</h3>
+                      <p>Do you want to restart?</p>
+                        <div class="button-group">
+                            <div class="button-group-wrapper">
+                                <a href="#" data-rel="back" onclick="playSound()" class="ui-btn ui-icon-delete ui-btn-icon-top">No</a>
+                            </div>
+                            <div class="button-group-wrapper">
+                                <a href="#Dumbbell" onclick="playSound()" class="ui-btn ui-icon-check ui-btn-icon-top">Yes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-group-wrapper">
+                    <a href="#Machine" onclick="playSound()" onclick="playSound()" class="ui-btn ui-icon-carat-r ui-btn-icon-top">Next</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Machine-->
+    <section data-role="page" id="Machine">
+        <div data-role="header">
+            <a href="#main" onclick="playSound()" data-icon="home">Home</a>
+            <h1>Machine</h1>
+
+
+        </div>
+        <div data-role="content" class="body">
+            <div class="body_part">
+
+              <div class="part">
+
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/23.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/24.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+              <div class="para">
+
+
+
+
+              <p><strong>Preparation:</strong> Sit on the machine with your back on the padded support. Place feet on platform and extend your hips and knees. Release dock lever and grasp the support handles on the sides.</p>
+              <p> <strong>Execution:</strong>  Lower sled by flexing hips and knees. Return by extending. </p>
+              </div>
+              </div>
+
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/25.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/26.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Sit on the machine with your back against the padded back support. Place your legs under the padded lever. Grasp the handles on the sides for support. </p>
+              <p> <strong>Execution:</strong> Push the padded lever up by extending your knees until your legs are straight. Return and Repeat.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/28.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/27.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Sit down on the abductor machine and select a comfortable weight. Position your legs and grip the handles on each side. From the waist up, your body should be stationary  </p>
+              <p> <strong>Execution:</strong> Slowly press against the machine with your legs to move them away from each other while exhaling. Inhale while releasing and repeat.</p>
+              </div>
+
+              </div>
+
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/31.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/32.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Start by adjusting the machine to your height and selecting your weight. Lie face down with the padded bar above your ankles and just below your calves. Stabilize yourself by gripping the handles of the machine. </p>
+              <p> <strong>Execution:</strong>Exhale and curl your legs in while pressing your ankles against the bar. Inhale as you extend your legs slightly back to starting position. You should feel tension in your muscles during the whole movement. Make sure your legs are touching the padded bar during the entire exercise.</p>
+              </div>
+
+              </div>
+
+
+              <div class="part">
+
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/40.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/41.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+              <div class="para">
+
+
+
+
+              <p><strong>Preparation:</strong>Start by setting your weight. Stand on the side platforms while you hold the pull up handles. Carefully put both your knees onto the the padded knee rest. </p>
+              <p> <strong>Execution:</strong>  Exhale as you pull yourself up. Inhale as you lower your body until your arms and shoulders are extended and repeat. </p>
+              </div>
+              </div>
+
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/42.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/43.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong> Sit down with your arms pressed against the pads and grab the handles in your desired grip type.  </p>
+              <p> <strong>Execution:</strong> Keep your upper arms still, exhale, and curl the handles upwards while contracting your biceps and repeat. Only lower the weights all the way down once you are finished with the exercise.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/44.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/45.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>  Sit down at the machine. Grab the handles with your forearms resting against the pads.   </p>
+              <p> <strong>Execution:</strong> Exhale as you raise your arms until your upper arms are horizontal. Return and repeat.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/46.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/47.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Preparation Set the weight, sit down, grab the handles and make sure your feet are solid on the floor. </p>
+              <p> <strong>Execution:</strong>   Exhale and press the handles up until your arms are extended. Lower, while keeping the weight stack in the air for resistance throughout the entire exercise, and repeat.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/48.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong> Sit down on the exercise bike, hold the grips and select "quick start" or enter program.</p>
+              <p> <strong>Execution:</strong> Pedal forward as you would on a bike while gripping the handles.</p>
+              </div>
+
+              </div>
+
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/50.jpg" style="width:90px;height:90px;">
+                </div>
+
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong> Step on pedal platforms and grasp the handle bars on each arm lever. Select "quick start" or enter program.</p>
+              <p> <strong>Execution:</strong>Pedal forward while alternating the arm levers back and forth.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/51.jpg" style="width:90px;height:90px;">
+                </div>
+
+
+              </div>
+
+              <div class="para">
+
+
+
+
+              <p> <strong>Execution:</strong>  Start with a walk and gradually speed up until you are moving at a fast, steady pace.</p>
+              </div>
+
+              </div>
+
+
+            </div>
+            <div class="button-group">
+                <div class="button-group-wrapper">
+                    <a href="#Long_Bar" onclick="playSound()" class="ui-btn ui-icon-carat-l ui-btn-icon-top">Previous</a>
+                </div>
+                <div class="button-group-wrapper">
+                    <a href="#reset-2" data-rel="popup" data-position-to="window" onclick="playSound()" class="ui-btn ui-icon-refresh ui-btn-icon-top">restart</a>
+                    <div data-role="popup" id="reset-2" class="ui-content">
+                        <h3>restart</h3>
+                        <p>Do you want to restart?</p>
+                        <div class="button-group">
+                            <div class="button-group-wrapper">
+                                <a href="#" data-rel="back" onclick="playSound()" class="ui-btn ui-icon-delete ui-btn-icon-top">No</a>
+                            </div>
+                            <div class="button-group-wrapper">
+                                <a href="#Dumbbell" onclick="playSound()" class="ui-btn ui-icon-check ui-btn-icon-top">Yes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-group-wrapper">
+                    <a href="#Cable" onclick="playSound()" class="ui-btn ui-icon-carat-r ui-btn-icon-top">Next</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Cable-->
+    <section data-role="page" id="Cable">
+        <div data-role="header">
+            <a href="#main" onclick="playSound()" data-icon="home">Home</a>
+            <h1>Cable</h1>
+
+
+        </div>
+        <div data-role="content" class="body">
+            <div class="body_part">
+              <div class="part">
+
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/81.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/82.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+              <div class="para">
+
+
+
+
+              <p><strong>Preparation:</strong>Stand with your feet shoulder width apart. Crossing your arms in front of you, grab opposite handle with each hand. Keep your back straight. </p>
+              <p> <strong>Execution:</strong> Keep your elbows stationary and extend your arms down simultaneously to your sides. Be sure not to lock your elbows as you straighten your arms. Slowly bend your arms back to start position and repeat.</p>
+              </div>
+              </div>
+
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/84.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/83.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Kneel down on your knees in front of a high pulley with a rope attachment. Grab the rope and lower it down so your hands are behind your neck.</p>
+              <p> <strong>Execution:</strong> Bend down at your waist, pulling the rope with you, so your elbows are at your thighs. Return to start position and repeat.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/85.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/86.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Attach a cable band to your right leg and hook it to the low pulley. Stand facing the machine with your arms on the stabilizing bars.</p>
+              <p> <strong>Execution:</strong> Keep your knees slightly bent and your core tight as you slowly kick your right leg back in an arc. Slowly return to start position and repeat.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/87.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/88.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Sit down at the machine, adjust the knee pad to your height and secure your knees under the padding. Grab the bar with your palms facing away from you, wider than shoulder width.</p>
+              <p> <strong>Execution:</strong>Exhale as you bring the bar down until it touches your upper chest. Inhale as you bring the bar back up. Repeat. </p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/89.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/90.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Attach the bar to the high pulley. Hold the bar in an underhand grip with your arms so your hands are just below your chest while facing the machine. </p>
+              <p> <strong>Execution:</strong> Exhale as you push down with your triceps, keeping your arms close to your sides. Return to start position and repeat. </p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/91.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/92.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Stand facing the pulley machine, feet shoulder width apart. Grab the rope with both hands, with a slight bend in your elbows and step away from the machine so there is some resistance. Bend your knees slightly, keep your back straight.  </p>
+              <p> <strong>Execution:</strong> Pull the rope down towards your knees, keeping your back straight and arms slightly bent. Return start position and repeat.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/93.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/94.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong>Position dual pulleys to chest height and choose your weight. Stand a foot or two in front of the cables, holding one in each hand. Stagger your balance for better stability with one foot in front of the other. Position your upper arms with your shoulder blades together. </p>
+              <p> <strong>Execution:</strong>Hold your body still, as you press the handles forward in front of you and bring them together at full extension. Return to starting position and repeat.</p>
+              </div>
+
+              </div>
+              <div class="part">
+
+
+              <h2>Description</h2>
+
+              <div class="row">
+                <div class="column">
+                  <img src="image/95.jpg" style="width:90px;height:90px;">
+                </div>
+                <div class="column">
+                  <img src="image/96.jpg" style="width:90px;height:90px;">
+                </div>
+
+              </div>
+
+              <div class="para">
+
+
+
+              <p><strong>Preparation:</strong> Place a flat bench perpendicularly and directly between two cable stacks. Place the handles on the low pulleys. Grab each handle and assume a position flat on your back on the bench. Start with your arms extended and your hands directly over your chest. </p>
+              <p> <strong>Execution:</strong>Exhale and press up, while simultaneously pulling your hands together until the handles touch at the Lower and repeat.</p>
+              </div>
+
+              </div>
+            </div>
+            <div class="button-group">
+                <div class="button-group-wrapper">
+                    <a href="#Machine" onclick="playSound()" class="ui-btn ui-icon-carat-l ui-btn-icon-top">Previous</a>
+                </div>
+                <div class="button-group-wrapper">
+                    <a href="#reset-3" data-rel="popup" data-position-to="window" onclick="playSound()" class="ui-btn ui-icon-refresh ui-btn-icon-top">Restart</a>
+                    <div data-role="popup" id="reset-3" class="ui-content">
+                      <h3>restart</h3>
+                      <p>Do you want to restart</p>
+
+                        <div class="button-group">
+                            <div class="button-group-wrapper">
+                                <a href="#" data-rel="back" onclick="playSound()" class="ui-btn ui-icon-delete ui-btn-icon-top">No</a>
+                            </div>
+                            <div class="button-group-wrapper">
+                                <a href="#Dumbbell" onclick="playSound()" class="ui-btn ui-icon-check ui-btn-icon-top">Yes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-group-wrapper">
+                    <a href="#confirm-1" data-rel="popup" data-position-to="window" onclick="playSound()" class="ui-btn ui-icon-carat-r ui-btn-icon-top">Finish</a>
+                    <div data-role="popup" id="confirm-1" class="ui-content">
+                        <h3>Finish</h3>
+                        <p>ARE YOU FINISH WITH THIS?</p>
+                        <div class="button-group">
+                            <div class="button-group-wrapper">
+                                <a href="#" data-rel="back" onclick="playSound()" class="ui-btn ui-icon-delete ui-btn-icon-top">No</a>
+                            </div>
+                            <div class="button-group-wrapper">
+                                <a href="#Finish" onclick="playSound()" class="ui-btn ui-icon-check ui-btn-icon-top">Yes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Finish-->
+    <section data-role="page" id="Finish">
+      <div data-role="header">
+          <a href="#main" onclick="playSound()" data-icon="home">Home</a>
+          <h1>Finish</h1>
+
+
+      </div>
+        <div data-role="content" class="body">
+            <a href="#answer" onclick=" playSound()" class="Finish">
+                <h1>Congratulations!</h1>
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+
+</html>
